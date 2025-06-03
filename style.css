@@ -3,31 +3,63 @@ h1{
 }
 
 body {
-    
+    background-color: #a9b783;
+    border: red;
+}
+
+.principal{
+    width: 1000px;
+    height: 1500px;
+    background-color: aqua;
 }
 
 p {
     color: red;
 }
 img {
-    width: 60%;
-    height: 60%;
+    width: auto;
+    height: auto;
     text-align: left;
     
 }
 .imagen1 {
-    width: 500px;
+    width: 100%;
     height: auto;
+    border-radius: 450px;
    /* background-color: blue;*/
     background-image: "https://cdn.pixabay.com/photo/2025/05/06/12/05/bike-9582579_640.png";
+    border: black;
 }
 
 .textoImagen1 {
     color: aqua;
-    text-align: right;
+    text-align: left;
     width: 20%;
     background-color: black;
 }
 .videoooo{
     background-image: "https://youtu.be/GCFnRkorl5g?si=93enDW6RgybWcpDY";
+}
+
+.imagen2 {
+    border-radius: 50%;
+}
+
+a {
+    border-color: red;
+    color: black;
+    background-color: blueviolet;
+    height: 25px;
+    width: 270px;
+    border-radius: 50px;
+}
+#detalles{
+    height: 1200px;
+    width: 100%;
+    background-color: blueviolet;
+}
+#productos{
+    height: 1200px;
+    width: 100%;
+    background-color: rgb(221, 40, 40);
 }

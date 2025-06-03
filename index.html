@@ -5,24 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script>
+        function cambiarContenido() {
+            let div = document.getElementById('ooo');
+            textito = 'https://cdn.pixabay.com/photo/2025/04/22/09/32/daisy-9549631_640.jpg'
+            div.innerHTML = '<img src='+textito+'>';
+        }
+
+    </script>
 </head>
 <body>
-    <div class="imagen1">
-        <img src="img/soccer-1457988_640.jpg">
-        <div class="textoImagen1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio eveniet eaque voluptate corporis, dignissimos accusamus blanditiis vitae, totam cum aliquam perspiciatis quasi? Maxime placeat fugiat quibusdam saepe, sit laboriosam! 
-        </div>
+    <div class="header">
+        <a href="https:/portal.inacap.cl">OPCION 1</a>
+        <a href="#detalles">OPCION 2</a>
+        <a href="#productos">OPCION 3</a>
     </div>
-    <div class="imagen2">
-        <img src="https://cdn.pixabay.com/photo/2012/09/15/08/12/kids-56952_640.jpg">
-        <div class="textoImagen2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio eveniet eaque voluptate corporis, dignissimos accusamus blanditiis vitae, totam cum aliquam perspiciatis quasi? Maxime placeat fugiat quibusdam saepe, sit laboriosam! 
-        </div>
-    </div>
-    <div class="videoooo">
+    <div class="principal">
+        <div id="miDiv">Contenido original</div>
+        <button onclick="cambiarContenido()">Cambiar Contenido</button>
 
+    
+        <div class="imagen1" id="ooo">
+            <img src="img/soccer-1457988_640.jpg">
+            <div class="textoImagen1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio eveniet eaque voluptate corporis, dignissimos accusamus blanditiis vitae, totam cum aliquam perspiciatis quasi? Maxime placeat fugiat quibusdam saepe, sit laboriosam! 
+            </div>
+            </div>
+            <div class="imagen2">
+            <img src="https://cdn.pixabay.com/photo/2012/09/15/08/12/kids-56952_640.jpg">
+            <div class="textoImagen2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio eveniet eaque voluptate corporis, dignissimos accusamus blanditiis vitae, totam cum aliquam perspiciatis quasi? Maxime placeat fugiat quibusdam saepe, sit laboriosam! 
+            </div>
+        </div>
+    </div> <!--  Fin de class principal -->
+    <div class="videoooo" style="color: tomato;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis corporis ea iure. Quasi sed necessitatibus voluptatibus natus ipsam dicta debitis a beatae consectetur harum iure et, illo aspernatur repellendus! Accusamus.
     </div>
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GCFnRkorl5g?si=0ggYNTmeq9EDVwa-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="detalles">
+        Mis detalles
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    </section >
+    <section id="productos">
+        .... Nuevos productos
+    </section>
 </body>
 </html>
